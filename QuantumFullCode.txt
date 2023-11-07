@@ -1,0 +1,22 @@
+version 1.0
+
+qubits 5
+X q[0]
+X q[1]
+X q[3]
+Toffoli q[1],q[3],q[4]
+X q[1]
+CNOT q[0],q[3]
+Toffoli q[1],q[3],q[4]
+X q[1]
+SWAP q[3],q[4]
+Toffoli q[0],q[1],q[2]
+CNOT q[0],q[1]
+Measure q[0]
+Measure q[1]
+Measure q[2]
+Measure q[3]
+Measure q[4]
+
+
+# start writing your code here
